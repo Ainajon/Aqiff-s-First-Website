@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Aqiff's personal website. Learn more about Aqiff's education, hobbies, and how to get in touch.">
+    <title>Aqiff's First Website</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url("images/gamba background.jpg");
+        }
+        header {
+            background-color: #010101;
+            color: #fff;
+            padding: 1em 0;
+            text-align: center;
+
+        }
+        nav {
+            margin: 0 auto;
+            width: 80%;
+            max-width: 1200px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 1em;
+        }
+        nav ul li button {
+            background: none;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            font-size: 1em;
+            padding: 0;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            max-width: 1200px;
+            margin: 2em auto;
+        }
+        .profile-image {
+            text-align: center;
+            margin-bottom: 2em;
+        }
+        .profile-image img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        section {
+            margin-bottom: 2em;
+            display: none;
+        }
+        .intro, .education, .hobby, .gallery, .contact {
+            background: #fff;
+            padding: 2em;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-with-description {
+            text-align: center;
+        }
+        .image-with-description img {
+            display: block;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #050505;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+        table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, Welcome to Aqiff's World!!!</h1>
+        <img src="WhatsApp Image 2024-06-03 at 18.20.44_687195a9.jpg" alt="Aqiff's World Header Image">
+        <nav>
+            <ul>
+                <li><button onclick="showSection('intro')">Home</button></li>
+                <li><button onclick="showSection('education')">Education</button></li>
+                <li><button onclick="showSection('hobby')">Hobby</button></li>
+                <li><button onclick="showSection('gallery')">Gallery</button></li>
+                <li><button onclick="showSection('contact')">Contact</button></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="profile-image" id="profileImageContainer">
+            <img src="" id="profileImage" alt="Profile Image" style="display:none;" />
+        </div>
+        <section id="intro" class="intro">
+            <h2>About Me</h2>
+            <p>Assalamualaikum, welcome to my first ever website.</p>
+            <div class="image-with-description">
+                <img src="gamba home page.jpg" alt="Profile Image" width="300" height="400">
+                <p>My name is Muhammad Aqiff Hakimi Bin Mohd Ghazali. I'm 21 years old and I'm from Beranang, Selangor. I'm currently studying Library Management at a Uitm Rembau. I'm interested in writing, singing, watching movies and listening song. I am a hard-working, honest individual. As a good timekeeper, I am always eager to learn new skills. I am friendly, helpful, and polite, and I have a good sense of humor. My strengths include being outgoing and tactful, and I am capable of listening effectively when dealing with problems. Let's be friends!</p>
+            </div>
+        </section>
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <p>This is the outline of my educational journey from the past to the present which I took from kindergarten, primary school, secondary school, Malaysian Higher Education Certificate and bachelor's degree.</p>
+            <div class="image-with-description">
+                <img src="PASTI ASSYAKIRIN.jpg" alt="PASTI AS SYAKIRIN" width="200" height="200">
+                <p>PASTI AS SYAKIRIN</p>
+                <img src="SK SEMENYIH.jpg" alt="SK SEMENYIH" width="200" height="200">
+                <p>SK SEMENYIH</p>
+                <img src="Gamba logo sambbst.jpg" alt="SAM BANDAR BARU SALAK TINGGI" width="200" height="200">
+                <p>SAM BANDAR BARU SALAK TINGGI</p>
+                <img src="SMK BTK.jpg" alt="SMK BANDAR TASIK KESUMA" width="200" height="200">
+                <p>SMK BANDAR TASIK KESUMA</p>
+                <img src="logo UITM.jpg" alt="UNIVERSITI TEKNOLOGI MARA" width="200" height="200">
+                <p>UNIVERSITI TEKNOLOGI MARA</p>
+            </div>
+        </section>
+        <section id="hobby" class="hobby">
+            <h2>Hobby</h2>
+            <p>I have a deep passion for writing, singing, listening to music, and watching movies. Writing allows me to express my thoughts and creativity on paper, turning ideas into stories. Singing gives me a joyful release, letting me connect with melodies and emotions. Listening to music is a constant source of inspiration and comfort, enhancing my moods and sparking imagination. Watching movies transports me to different worlds and perspectives, enriching my understanding of storytelling and human experiences. Together, these hobbies bring balance and fulfillment to my life.</p>
+            <div class="image-with-description">
+                <img src="puisi.jpg" alt="Poem" width="200" height="300">
+                <p>One of the poems that I wrote in my leisure time.</p>
+                <img src="gamba nyanyi.jpg" alt="Singing" width="200" height="200">
+                <p>I started to join nasheed group in my high school years.</p>
+                <img src="song.jpg" alt="Top 10 Songs" width="200" height="500">
+                <p>Top 10 songs that I listen to frequently.</p>
+                <img src="movie.jpg" alt="Favorite Movies" width="200" height="200">
+                <p>My favorite movies of all time.</p>
+            </div>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>Gallery</h2>
+            <div class="row"> 
+                <div class="column">
+                    <img src="Gamba aqiff gallery 1.jpg" alt="Gallery Image 1">
+                    <img src="Gamba aqiff gallery 2.jpg" alt="Gallery Image 2">
+                    <img src="gamba aqiff gallery 3.jpg" alt="Gallery Image 3">
+                    <img src="gamba aqiff gallery 4.jpg" alt="Gallery Image 4">
+                    <img src="gamba aqiff gallery 5.jpg" alt="Gallery Image 5">
+                    <img src="gamba aqiff gallery 6.jpg" alt="Gallery Image 6">
+                    <img src="gamba aqiff gallery 7.jpg" alt="Gallery Image 7">
+                </div>
+                <div class="column">
+                    <img src="gamba aqiff gallery 8.jpg" alt="Gallery Image 8">
+                    <img src="gamba aqiff gallery 9.jpg" alt="Gallery Image 9">
+                    <img src="gamba aqiff gallery 10.jpg" alt="Gallery Image 10">
+                    <img src="gamba aqiff gallery 11.jpg" alt="Gallery Image 11">
+                    <img src="gamba aqiff gallery 12.jpg" alt="Gallery Image 12">
+                    <img src="gamba aqiff 13.jpg" alt="Gallery Image 13">
+                </div>  
+                <div class="column">
+                    <img src="gamba aqiff 15.jpg" alt="Gallery Image 15">
+                    <img src="gamba aqiff 14.jpg" alt="Gallery Image 14">
+                    <img src="gamba aqiff 16.jpg" alt="Gallery Image 16">
+                    <img src="gamba aqiff 17.jpg" alt="Gallery Image 17">
+                    <img src="gamba aqiff 18.jpg" alt="Gallery Image 18">
+                    <img src="gamba aqiff 19.jpg" alt="Gallery Image 19">
+                    <img src="gamba aqiff 20.jpg" alt="Gallery Image 20">
+                </div>
+                <div class="column">
+                    <img src="gamba aqiff 21.jpg" alt="Gallery Image 21">
+                    <img src="gamba aqiff 22.jpg" alt="Gallery Image 22">
+                    <img src="gamba aqiff 23.jpg" alt="Gallery Image 23">
+                    <img src="gamba aqiff 24.jpg" alt="Gallery Image 24">
+                    <img src="gamba aqiff 25.jpg" alt="Gallery Image 25">
+                    <img src="gamba aqiff 26.jpg" alt="Gallery Image 26">
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <h2>Contact</h2>
+            <table>
+                <tr>
+                </tr>
+                <tr>
+                  <td>Instagram</td>
+                  <td><a href="https://www.instagram.com/4qiffs/?next=%2F&hl=en">4qiffs</>
+                </a> </td>
+                </tr>
+                <tr>
+                  <td>Facebook</td>
+                  <td><a href="https://www.facebook.com/aqiffshakimi.jon">aqiffshakimi</>
+                </a></td>
+                </tr>
+                <tr>
+                  <td>X</td>
+                  <td><a href="https://x.com/4qifs">4qifs</>
+                </a></td>
+                </tr>
+                <tr>
+                  <td>Youtube</td>
+                  <td><a href="https://www.youtube.com/channel/UCiwFy5Y2Fs4xWTQhXTy6Vbg">aqiffshakimi4134</>
+                </a></td>
+                </tr>
+              </table>
+              
+        </section>
+    </div>
+    <footer>
+        <p>&copy; This website is purpose of subject IML 470.</p>
+    </footer>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+            var profileImageContainer = document.getElementById('profileImageContainer');
+            if (sectionId === 'intro') {
+                profileImageContainer.style.display = 'block';
+            } else {
+                profileImageContainer.style.display = 'none';
+            }
+        }
+        window.onload = function() {
+            showSection('intro');
+        };
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
